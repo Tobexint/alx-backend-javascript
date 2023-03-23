@@ -1,18 +1,18 @@
-const calcuateNumber = require('./0-calcul.js');
+const calculateNumber = require('./0-calcul.js');
 const assert = require('assert');
 
 describe('calculateNumber', function () {
-  it('should be 1 + 4 = 5', function () {
-    assert.equal(calculateNumber(1, 4), 5);
+  it('should be 1 + 3 = 4', function () {
+    assert.equal(calculateNumber(1, 3), 4);
   });
-  it('should be 1 + 2.8 = 4', function () {
-    assert.equal(calculateNumber(1, 2.8), 4);
-  });
-  it('should be 2.2 + 4.7 = 7', function () {
-   assert.equal(calculateNumber(2.2, 4.7), 7);
+  it('should be 1 + 3.7 = 5', function () {
+    assert.equal(calculateNumber(1, 3.7), 5);
   });
   it('should be 1.2 + 3.7 = 5', function () {
     assert.equal(calculateNumber(1.2, 3.7), 5);
+  });
+  it('should be 1.5 + 3.7 = 6', function () {
+    assert.equal(calculateNumber(1.5, 3.7), 6);
   });
   it('should be -2 + 4 = 2', function () {
     assert.equal(calculateNumber(-2, 4), 2);
